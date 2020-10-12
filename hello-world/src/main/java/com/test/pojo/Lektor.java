@@ -9,6 +9,13 @@ public class Lektor extends Clovek {
         this.pocetLetZkusenosti = pocetLetZkusenosti;
     }
 
+    @Override
+    public String getType() {
+//        return "LEKTOR";
+//        return "CLOVEK:LEKTOR";
+        return super.getType() + ":LEKTOR";
+    }
+
     public int getPocetLetZkusenosti() {
         return pocetLetZkusenosti;
     }
