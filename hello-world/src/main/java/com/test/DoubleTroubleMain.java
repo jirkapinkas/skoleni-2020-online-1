@@ -1,6 +1,7 @@
 package com.test;
 
 import java.math.BigDecimal;
+import java.util.stream.Stream;
 
 public class DoubleTroubleMain {
 
@@ -23,6 +24,9 @@ public class DoubleTroubleMain {
             BigDecimal b = BigDecimal.valueOf(0.2);
             System.out.println(a.add(b));
         }
+        int milion = 1_000_000;
+
+        // ctrl + / : (un)comment
     }
 
 }

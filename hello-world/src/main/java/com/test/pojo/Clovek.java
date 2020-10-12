@@ -1,11 +1,21 @@
 package com.test.pojo;
 
+/**
+ * Hello World trida Clovek
+ */
 public class Clovek {
 
+    /**
+     * Jmeno cloveka
+     */
     private String jmeno;
 
     private int vyska;
 
+    /**
+     * Metoda co vrati jmeno a vysku cloveka v "cm"
+     * @return Stuff
+     */
     public String getClovekTxt() {
         return "Jmeno: " + jmeno + ", Vyska: " + vyska + " cm";
     }
