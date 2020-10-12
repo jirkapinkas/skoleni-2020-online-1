@@ -3,21 +3,19 @@ package com.test.pojo;
 /**
  * Hello World trida Clovek
  */
-public class Clovek {
+public class Clovek extends Zvire {
 
     /**
      * Jmeno cloveka
      */
     private String jmeno;
 
-    private int vyska;
-
     /**
      * Metoda co vrati jmeno a vysku cloveka v "cm"
      * @return Stuff
      */
     public String getClovekTxt() {
-        return "Jmeno: " + jmeno + ", Vyska: " + vyska + " cm";
+        return "Jmeno: " + jmeno + ", Vyska: " + getVyska() + " cm";
     }
 
     // alt + insert
@@ -30,11 +28,4 @@ public class Clovek {
         this.jmeno = jmeno;
     }
 
-    public int getVyska() {
-        return vyska;
-    }
-
-    public void setVyska(int vyska) {
-        this.vyska = vyska;
-    }
 }
