@@ -10,10 +10,10 @@ public class HelloWorldMain {
         System.out.println("Hello World!");
         System.out.println("============");
 
-        Lektor jirka = new Lektor();
-        jirka.setJmeno("Jirka Pinkas");
-        jirka.setVyska(170);
-        jirka.setPocetLetZkusenosti(15);
+        Lektor jirka = new Lektor(170, "Jirka Pinkas", 15);
+//        jirka.setJmeno("Jirka Pinkas");
+//        jirka.setVyska(170);
+//        jirka.setPocetLetZkusenosti(15);
         // Ctrl + klik = chytrejsi navigace v kodu
         System.out.println(jirka.getClovekTxt());
 

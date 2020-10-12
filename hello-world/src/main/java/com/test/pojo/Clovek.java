@@ -10,6 +10,11 @@ public class Clovek extends Zvire {
      */
     private String jmeno;
 
+    public Clovek(int vyska, String jmeno) {
+        super(vyska);
+        this.jmeno = jmeno;
+    }
+
     @Override
     public String getType() {
         return "CLOVEK";

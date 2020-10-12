@@ -2,6 +2,10 @@ package com.test.pojo;
 
 public abstract class Zvire {
 
+    public Zvire(int vyska) {
+        this.vyska = vyska;
+    }
+
     private int vyska;
 
     private boolean alive;
