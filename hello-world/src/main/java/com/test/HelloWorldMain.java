@@ -1,5 +1,6 @@
 package com.test;
 
+import com.test.pojo.Dog;
 import com.test.pojo.Lektor;
 
 public class HelloWorldMain {
@@ -20,6 +21,13 @@ public class HelloWorldMain {
 //        Integer integer = Integer.valueOf(123);
         Integer integer = Integer.valueOf("123");
         int integer2 = Integer.parseInt("123");
+
+        // pouziti Builder Design Pattern
+        Dog dog = Dog.builder()
+                .name("Lumpik")
+                .sex(Dog.Sex.MALE)
+                .alive(true)
+                .build();
     }
 
 }
