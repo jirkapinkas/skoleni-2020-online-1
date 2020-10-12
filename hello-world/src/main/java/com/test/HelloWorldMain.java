@@ -15,6 +15,10 @@ public class HelloWorldMain {
         jirka.setVyska(170);
         // Ctrl + klik = chytrejsi navigace v kodu
         System.out.println(jirka.getClovekTxt());
+
+//        Integer integer = Integer.valueOf(123);
+        Integer integer = Integer.valueOf("123");
+        int integer2 = Integer.parseInt("123");
     }
 
 }
