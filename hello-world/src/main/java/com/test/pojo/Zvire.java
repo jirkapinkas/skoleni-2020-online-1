@@ -1,6 +1,6 @@
 package com.test.pojo;
 
-public class Zvire {
+public abstract class Zvire {
 
     private int vyska;
 
@@ -21,4 +21,6 @@ public class Zvire {
     public void setAlive(boolean alive) {
         this.alive = alive;
     }
+
+    public abstract String getType();
 }

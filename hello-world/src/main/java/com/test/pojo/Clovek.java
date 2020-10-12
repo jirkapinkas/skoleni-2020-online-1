@@ -10,6 +10,11 @@ public class Clovek extends Zvire {
      */
     private String jmeno;
 
+    @Override
+    public String getType() {
+        return "CLOVEK";
+    }
+
     /**
      * Metoda co vrati jmeno a vysku cloveka v "cm"
      * @return Stuff

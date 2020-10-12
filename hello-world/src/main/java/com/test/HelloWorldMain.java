@@ -1,6 +1,5 @@
 package com.test;
 
-import com.test.pojo.Clovek;
 import com.test.pojo.Lektor;
 
 public class HelloWorldMain {
