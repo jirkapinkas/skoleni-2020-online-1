@@ -6,7 +6,7 @@ public abstract class Zvire {
         this.vyska = vyska;
     }
 
-    private int vyska;
+    protected int vyska;
 
     private boolean alive;
 

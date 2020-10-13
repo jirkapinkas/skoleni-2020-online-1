@@ -25,7 +25,7 @@ public class Clovek extends Zvire {
      * @return Stuff
      */
     public String getClovekTxt() {
-        return "Jmeno: " + jmeno + ", Vyska: " + getVyska() + " cm";
+        return "Jmeno: " + jmeno + ", Vyska: " + vyska + " cm";
     }
 
     // alt + insert
