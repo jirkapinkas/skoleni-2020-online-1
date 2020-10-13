@@ -3,6 +3,8 @@ package com.test;
 import com.test.pojo.Dog;
 import com.test.pojo.Lektor;
 
+import java.util.Arrays;
+
 public class HelloWorldMain {
 
     public static void main(String[] args) {
@@ -28,6 +30,9 @@ public class HelloWorldMain {
                 .sex(Dog.Sex.MALE)
                 .alive(true)
                 .build();
+
+        Arrays.asList(new int[] {1, 2, 3, 4, 5});
+        Arrays.asList(1, 2, 3, 4, 5);
     }
 
 }

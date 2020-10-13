@@ -15,6 +15,7 @@ public class PolymorfizmusMain {
                 .alive(true)
                 .build();
         System.out.println(dog/*.toString()*/);
+        System.out.println("Pohlavi psa: " + dog.getSex().getName());
 
         Date date = new Date(); // POZOR! STARY ZPUSOB PRACE S DATUMEM A CASEM!!!
         int currentYearDeprecated = date.getYear();

@@ -20,7 +20,17 @@ public class Dog {
     private boolean alive;
 
     public enum Sex {
-        MALE, FEMALE
+        MALE("pes"), FEMALE("fena");
+
+        private String name;
+
+        Sex(String name) {
+            this.name = name;
+        }
+
+        public String getName() {
+            return name;
+        }
     }
 
     private Sex sex;
