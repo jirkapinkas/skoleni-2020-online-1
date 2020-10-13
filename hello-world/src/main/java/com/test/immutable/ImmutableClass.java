@@ -1,6 +1,6 @@
 package com.test.immutable;
 
-public class ImmutableClass {
+public final class ImmutableClass {
 
     private String name;
 

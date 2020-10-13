@@ -2,9 +2,9 @@ package com.test.immutable;
 
 import java.util.Arrays;
 
-public class ImmutableAgain {
+public final class ImmutableAgain {
 
-    private String[] strings;
+    private final String[] strings;
 
     public ImmutableAgain(String[] strings) {
         this.strings = Arrays.copyOf(strings, strings.length);
