@@ -5,6 +5,7 @@ import com.test.pojo.Dog;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class ArrayListStreamMain {
 
@@ -16,15 +17,23 @@ public class ArrayListStreamMain {
                 Dog.builder().name("Dora").sex(Dog.Sex.FEMALE).build(),
                 Dog.builder().name("Bobik").sex(Dog.Sex.MALE).build()
         );
-//        for (Dog dog : dogs) {
-//            if(dog.getSex() == Dog.Sex.MALE) {
-//                System.out.println(dog.getName());
-//            }
-//        }
-        dogs.stream()
+        // imperativni zpusob programovani
+        List<String> dogNames1 = new ArrayList<>();
+        for (Dog dog : dogs) {
+            if(dog.getSex() == Dog.Sex.MALE && dog.isAlive()) {
+                String name = dog.getName();
+                dogNames1.add(name);
+            }
+        }
+        System.out.println(dogNames1);
+
+        // deklarativni zpusob programovani
+        List<String> dogNames2 = dogs.stream()
                 .filter(dog -> dog.getSex() == Dog.Sex.MALE)
+                .filter(Dog::isAlive)
                 .map(Dog::getName)
-                .forEach(System.out::println);
+                .collect(Collectors.toList());
+        System.out.println(dogNames2);
     }
 
 }
